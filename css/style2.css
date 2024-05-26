@@ -1,0 +1,80 @@
+html{
+    font-size: 62.5%;
+}
+
+.card{
+    box-shadow: 0 0 15px rgb(177, 177, 177);
+    border-radius: 10px;
+}
+
+.quote__icon--container{
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    background: orangered;
+    width: 64px ;
+    height: 64px;
+    border-radius: 100px;
+}
+
+.quote__icon{
+    position: absolute;
+    top: 16px;
+    right: 17px;
+}
+/* Grid */
+
+.grid{
+    display: grid;
+}
+
+@media screen and (min-width:866px) {
+    .grid--1x2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:1024px){
+    .grid--1x2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Testimonial */
+
+.testimonial{
+    padding: 3rem;
+}
+
+.testimonial__image > img{
+    width: 100%;
+}
+
+.testimonial__image{
+    position: relative;
+}
+
+.testimonial__image > .quote__icon--container{
+    position: absolute;
+    top: 2rem;
+    right: -32px;
+}
+
+.lorem{
+    font-size: 2rem;
+    color: #5c5577;
+    font-style: italic;
+    line-height: 1.5;
+    padding-left: 5rem;
+    font-family: Inter, Arial, Helvetica, sans-serif
+}
+
+.lorem::before{
+    content: open-quote;
+    padding: 1rem;
+}
+
+.lorem::after{
+    content: close-quote;
+    padding: 1rem;
+}
